@@ -6,17 +6,17 @@ sudo ln -s /usr/bin/xsubpp /usr/share/perl5/ExtUtils/xsubpp
 
 sudo yum install ncurses ncurses-devel -y
 #sudo yum install ncurses-devel.x86_64  -y
-mkdir ~/tool                                                                                                                                    
-cd ~/tool             
+mkdir ~/tool
+cd ~/tool
 if [ -d "/root/tool/vim-master" ];then
 echo "文件存在"
 else
 wget https://github.com/vim/vim/archive/master.zip
-unzip master.zip      
+unzip master.zip
 echo "文件不存在"
 fi
-cd vim-master         
-cd src/               
+cd vim-master
+cd src/
 # ./configure --with-features=huge -enable-pythoninterp --with-python-config-dir=/usr/lib64/python2.7/config
 
 ./configure --with-features=huge \ --enable-multibyte \
@@ -28,9 +28,6 @@ cd src/
 --enable-cscope \
 --prefix=/usr/local
 
-sudo make             
-sudo make install     
+sudo make
+sudo make install
 export PATH=/usr/local/bin:$PATH
- 
-# vimrc {{{ #
-#ln /root/dofile/vimDoFile/vimrcs/vim8.vimrc /root/.vimrc -s
