@@ -1,5 +1,5 @@
 #!/bin/sh
 sudo yum -y install tmux
 cp -v tmux.conf ~/.tmux.conf
-cat ./bashrcTmux >> ~/.bashrc
+echo "alias tmux='tmux -2'" >> ~/.bashrc
 source ~/.bashrc
