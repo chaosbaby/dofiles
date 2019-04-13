@@ -50,7 +50,7 @@ Plugin  'SirVer/ultisnips'
 " Plugin 'ervandew/supertab'
 " }}} SYNTAX & COMPLETION "
 " FIND USAGE DEFINITION {{{ "
-Plugin  'brookhong/cscope.vim'
+" Plugin  'brookhong/cscope.vim'
 Plugin  'easymotion/vim-easymotion'
 " }}} FIND USAGE DEFINITION "
 " TYPESCRIPT {{{2
@@ -63,6 +63,9 @@ Plugin  'altercation/vim-colors-solarized'
 Plugin  'tomasr/molokai'
 Plugin  'vim-scripts/phd'
 Plugin  'chriskempson/base16-vim'
+" SMALL TOOL {{{2
+Plugin 'ConradIrwin/vim-bracketed-paste' " 使用bracketed-paste mode，粘贴代码时避免格式化
+" }}} SMALL TOOL "
 " }}}1
 
 call vundle#end()
