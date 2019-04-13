@@ -3,13 +3,13 @@
 " AUTOLOAD BUNDLE{{{2
 set nocompatible              " be iMproved, required
 filetype off                  " required
+filetype plugin on
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-" set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 " vundle 管理的插件列表必须位于 vundle#begin() 和 vundle#end() 之间
-"call vundle#begin()
-call vundle#rc()
+call vundle#begin()
+#call vundle#rc()
 " alternatively, pass a path where Vundle should install plugins
 "let path = '~/some/path/here'
 "call vundle#rc(path)
@@ -66,7 +66,7 @@ Plugin  'tomasr/molokai'
 Plugin  'vim-scripts/phd'
 Plugin  'chriskempson/base16-vim'
 " }}}1
-"call vundle#end()
+call vundle#end()
 filetype on
 
 " VIM BASE IDE SETTING {{{1
