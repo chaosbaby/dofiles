@@ -1,5 +1,4 @@
 " plug install {{{1
-
 " AUTOLOAD BUNDLE{{{2
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -9,7 +8,6 @@ filetype plugin on
 set rtp+=~/.vim/bundle/Vundle.vim
 " vundle 管理的插件列表必须位于 vundle#begin() 和 vundle#end() 之间
 call vundle#begin()
-#call vundle#rc()
 " alternatively, pass a path where Vundle should install plugins
 "let path = '~/some/path/here'
 "call vundle#rc(path)
@@ -66,6 +64,7 @@ Plugin  'tomasr/molokai'
 Plugin  'vim-scripts/phd'
 Plugin  'chriskempson/base16-vim'
 " }}}1
+
 call vundle#end()
 filetype on
 
@@ -262,7 +261,6 @@ function! CleanupBuffer(keep)
     exec "normal " . lnum . "G"
 endfunction
 " }}}
-
 " self made function {{{ "
 
 " run the file
@@ -310,7 +308,6 @@ func! Rungdb()
 
 endfunction
 " }}} self made function "
-
 " }}}1
 
 " PLUG SETTING {{{1
@@ -643,5 +640,5 @@ let g:solarized_termtrans = 1
 if &term =~ '256color'
   set t_ut=
 endif
-colorscheme base16-monokai
-" colorscheme molokai
+" colorscheme base16-monokai
+colorscheme molokai
